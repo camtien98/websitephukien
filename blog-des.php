@@ -71,6 +71,16 @@
                            <li class="nav-item">
                            <a class="nav-link"href="session.php"><i class="fa fa-cart-plus" aria-hidden="true" ></i>Giỏ Hàng</a>
                            </li>
+
+                           <li class="nav-link">
+                                <form class="form-inline my-2 my-lg-0" style="margin-left:30px;" action="seach.php" method="POST">
+                                 <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search" name="timkiem">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                         <i class="fa fa-search" aria-hidden="true"></i>
+
+                                      </button>
+                              </form>
+                              </li>
                       </div>
                         </ul>
                         

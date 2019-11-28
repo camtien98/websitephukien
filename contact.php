@@ -51,13 +51,15 @@
                                 <a class="nav-link" href="contact.php">Liên Hệ</a>
                             </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0" style="margin-left:30px;">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                                <i class="fa fa-search" aria-hidden="true"></i>
+                        <li class="nav-link">
+                                <form class="form-inline my-2 my-lg-0" style="margin-left:30px;" action="seach.php" method="POST">
+                                 <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search" name="timkiem">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                         <i class="fa fa-search" aria-hidden="true"></i>
 
-                            </button>
-                        </form>
+                                      </button>
+                              </form>
+                              </li>
                     </div>
                 </nav>
             </div>

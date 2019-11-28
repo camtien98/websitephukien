@@ -127,7 +127,7 @@
                                     echo"</div>"; 
                                     echo"</td>"; 
                                     echo"<td data-th='Price'>$gia</td>"; 
-                                    echo"<td data-th='Quantity' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$soluong";
+                                    echo"<td data-th='Quantity' ><input type='number' value='$soluong' />";
                                     echo"</td>"; 
                                     echo"<td data-th='Subtotal' class='text-center'>$thanhtien</td> ";
                                     echo"<td class='action' data-th=''>";
