@@ -264,7 +264,7 @@
     </div>
     <!-- Footer End-->
     <!-- Chat Box Start-->
-    <script src="https://uhchat.net/code.php?f=91925c"></script>
+   
     <!-- Chat Box End-->
     <!-- jquery
 		============================================ -->
