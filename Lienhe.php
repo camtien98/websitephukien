@@ -35,20 +35,18 @@
                     <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto ">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Trang Chủ
-                                    <span class="sr-only">(current)</span>
-                                </a>
+                                <a class="nav-link" href="Trangchu.php">Trang Chủ </a>            
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about-us.php">Giới Thiệu</a>
+                                <a class="nav-link" href="GioiThieusp.php">Giới Thiệu</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="product.php">Sản Phẩm</a>
+                                <a class="nav-link" href="SanPham.php">Sản Phẩm</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.php">Liên Hệ</a>
+                                <a class="nav-link" href="Lienhe.php">Liên Hệ</a>
                             </li>
                         </ul>
                         <li class="nav-link">

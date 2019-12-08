@@ -1,9 +1,6 @@
+<?php include("configsever.php") ?>
 <!DOCTYPE html>
 <html lang="en">
- <?php 
-require_once 'connect.php'
-?> 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,32 +44,30 @@ require_once 'connect.php'
                         <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto ">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Trang Chủ
+                                    <a class="nav-link" href="Trangchu.php">Trang Chủ
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about-us.php">Giới Thiệu</a>
+                                    <a class="nav-link" href="GioiThieusp.php">Giới Thiệu</a>
                                 </li>
     
                                 <li class="nav-item">
-                                    <a class="nav-link" href="product.php">Sản Phẩm</a>
+                                    <a class="nav-link" href="SanPham.php">Sản Phẩm</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.php">Liên Hệ</a>
+                                    <a class="nav-link" href="Lienhe.php">Liên Hệ</a>
                                 </li>
                                <li class="nav-item">
                                <a class="nav-link" href="session.php"><i class="fa fa-cart-plus" aria-hidden="true" >&nbsp;</i>Giỏ Hàng</a>
                                </li>
-                               <li class="nav-link">
-                                <form class="form-inline my-2 my-lg-0" style="margin-left:30px;" action="timkiem.php" method="POST">
-                               <div align="center">
-            <form action="search.php" method="get">
-                Search: <input type="text" name="search" />
-                <input type="submit" name="ok" value="search" />
-            </form>
-        </div>
-</form>
+                               <li class="nav-link"><form class="form-inline my-2 my-lg-0" style="margin-left:30px;" action="seach.php" method="POST">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search" name="timkiem">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+
+                            </button>
+                        
                             </ul>
                             
                              
@@ -83,8 +78,10 @@ require_once 'connect.php'
         </header>
         <div class="banner">
             <div class="autoplay css_slider">
-                <img src="img/1.jpg" alt="">
+                
                 <img src="img/2.jpg" alt="">
+                <img src="img/1.jpg" alt="">
+                 <img src="img/b5.png" alt="">
 
                
             </div>
@@ -98,84 +95,18 @@ require_once 'connect.php'
                     </ol>
                 </nav>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 new-box">
-                    <div class="card">
-                        <a href=""><img class="card-img-top" src="img/2.png" alt=""></a>
-</a>
-                        <div class="card-body">
-                            <div class="time-new"><span><i class="fa fa-clock-o"></i> Nov 11,2019 </span> - <span><i
-                                        class="fa fa-user-circle"></i> Tiên Tiên </span></div>
-                            <h5 class="tl-new"><a href=""> Sạc Dự Phòng AVA 10.000mAh </h5>
-                            <a href="blog-des.php" class="read-more">Xem thêm <i class="fa fa-long-arrow-right"
-                                    aria-hidden="true"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 new-box">
-                    <div class="card">
-                        <a href=""><img class="card-img-top" src="img/5.png" alt=""></a>
-                        <div class="card-body">
-                            <div class="time-new"><span><i class="fa fa-clock-o"></i> Nov 11, 2019 </span> - <span><i
-                                        class="fa fa-user-circle"></i> Tiên Tiên</span></div>
-                            <h5 class="tl-new"><a href="">Loa vi tính Enkor 2.1 R228</a></h5>
-                            <a href="blog-des.php" class="read-more">Xem thêm <i class="fa fa-long-arrow-right"
-                                    aria-hidden="true"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 new-box">
-                    <div class="card">
-                        <a href=""><img class="card-img-top" src="img/9.png" alt=""></a>
-                        <div class="card-body">
-                            <div class="time-new"><span><i class="fa fa-clock-o"></i>  Nov 11, 2019</span> - <span><i
-                                        class="fa fa-user-circle"></i> Tiên Tiên </span></div>
-                            <h5 class="tl-new"><a href="">Adapter sạc 3.4A Dual Xmobile DS702 Trắng</a></h5>
-                            <a href="index.html" class="read-more">Xem thêm <i class="fa fa-long-arrow-right"
-                                    aria-hidden="true"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 new-box">
-                    <div class="card">
-                        <a href=""><img class="card-img-top" src="img/23.png" alt=""></a>
-                        <div class="card-body">
-                            <div class="time-new"><span><i class="fa fa-clock-o"></i>  Nov 11, 2019</span> - <span><i
-                                        class="fa fa-user-circle"></i> Tiên Tiên </span></div>
-                            <h5 class="tl-new"><a href="">ATai nghe Bluetooth Roman Q5C Đen /a></h5>
-                            <a href="index.html" class="read-more">Xem thêm <i class="fa fa-long-arrow-right"
-                                    aria-hidden="true"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-4 col-sm-6 new-box">
-                    <div class="card">
-                        <a href=""><img class="card-img-top" src="img/39.png" alt=""></a>
-                        <div class="card-body">
-                            <div class="time-new"><span><i class="fa fa-clock-o"></i>  Nov 11, 2019</span> - <span><i
-                                        class="fa fa-user-circle"></i> Tiên Tiên </span></div>
-                            <h5 class="tl-new"><a href="">Ốp lưng Galaxy A20s Nhựa dẻo TSKA828 Đoremon</a></h5>
-                            <a href="index.html" class="read-more">Xem thêm <i class="fa fa-long-arrow-right"
-                                    aria-hidden="true"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-4 col-sm-6 new-box">
-                    <div class="card">
-                        <a href=""><img class="card-img-top" src="img/13.png" alt=""></a>
-                        <div class="card-body">
-                            <div class="time-new"><span><i class="fa fa-clock-o"></i>  Nov 11, 2019</span> - <span><i
-                                        class="fa fa-user-circle"></i> Tiên Tiên </span></div>
-                            <h5 class="tl-new"><a href="">Cáp Micro 1m Samsung DS702 Trắng</a></h5>
-                            <a href="index.html" class="read-more">Xem thêm <i class="fa fa-long-arrow-right"
-                                    aria-hidden="true"></i> </a>
-                        </div>
-                    </div>
-                </div>
-          
-        </div>
-    </div>
-           <div class="footer">
+<!--------------------------- Dua san pham vo --------------------->
+      <?php
+      include("cusac.php")
+       include("daycapsac.php")
+         include("loa.php")
+           include("oplung.php")
+    include("sacduphong.php")
+      include("tainghe.php");
+      ?>
+
+<!--------------------------- ket thuc Dua san pham vo --------------------->
+                <div class="footer">
                 <div class="container ft-top">
                     <div class="row">
                         <div class="col-md-3">

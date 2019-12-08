@@ -6,7 +6,7 @@ error_reporting(0);
 $config_db = array(
 	'db_host' => 'localhost',
 	'db_user' => 'root',
-	'db_name' => 'db_phukiendientu',
+	'db_name' => 'db_doan',
 	'db_pass' => ''
 
 );
