@@ -50,7 +50,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Admin Nhuận Linh</title>
+    <title>Admin Tiên Tiên</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -150,31 +150,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="nav nav-tabs custom-menu-wrap">
-                        <li><a data-toggle="tab" href="#Home">Trang Chủ</a>
+                        <li><a class="nav-link" href="quanly.php">Trang chủ</a>
                         </li>
-                        <li><a data-toggle="tab" href="#mailbox">Hộp Thư</a>
-                        </li>
-                     
+                        <li><a class="nav-link" href="gopykhachhang.php">Hộp Thư</a>
+                        </li>                    
                     </ul>
-                    <div class="tab-content custom-menu-content">
-                        <div id="Home" class="tab-pane tab-custon-menu-bg animated flipInX">
-                            <ul class="main-menu-dropdown">
-                            <li><a href="quanly.php">Danh Sách Đơn Đặt Hàng</a>
-                                </li>
-                                <li><a href="../index.html">Về Website</a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                        <div id="mailbox" class="tab-pane tab-custon-menu-bg animated flipInX">
-                            <ul class="main-menu-dropdown">
-                                <li><a href="#">Góp Ý Khách Hàng</a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                       
-                    </div>
                 </div>
             </div>
         </div>
