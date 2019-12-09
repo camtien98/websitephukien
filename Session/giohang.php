@@ -54,7 +54,7 @@ if (isset($_GET['themgiohang']))
       $_SESSION['giohang'][0]["id"] = $id;
       $_SESSION['giohang'][0]["soluong"] = 1;
    }
-   header("Location: product.php");
+   header("Location: SanPham.php");
   
 }
 

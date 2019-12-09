@@ -6,11 +6,11 @@ error_reporting(0);
 $config_db = array(
 	'db_host' => 'localhost',
 	'db_user' => 'root',
-	'db_name' => 'db_phukiendientu',
+	'db_name' => 'db_doan',
 	'db_pass' => ''
 
 );
-$conn = new mysqli($config_db['db_host'], $config_db['db_user'], $config_db['db_pass'],$config_db['db_name'])  or die ('Không thể kết nối rồi bạn nhé :)) <3 <3');
+$conn = new mysqli($config_db['db_host'], $config_db['db_user'], $config_db['db_pass'],$config_db['db_name'])  or die ('Không thể kết nối !');
 
 // // mysqli_select_db($config_db['db_name'],$conn);
 

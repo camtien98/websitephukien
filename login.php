@@ -42,7 +42,7 @@ header("location:admin/quanly.php");
 exit();
 }
 else{
-header("location:index.html");
+header("location:Trangchu.php");
 exit();
 }
 }

@@ -106,28 +106,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="nav nav-tabs custom-menu-wrap">
-                        <li><a data-toggle="tab" href="#Home">Trang Chủ</a>
+                        <li><a class="nav-link" href="quanly.php">Đơn Hàng</a>
                         </li>
                         <li><a data-toggle="tab" href="#mailbox">Hộp Thư</a>
-                        </li>
-                      
+                        </li>                      
                     </ul>
-                    <div class="tab-content custom-menu-content">
-                        <div id="Home" class="tab-pane tab-custon-menu-bg animated flipInX">
-                            <ul class="main-menu-dropdown">
-                                <li><a href="../index.html">Quay Trở Lại</a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                        <div id="mailbox" class="tab-pane tab-custon-menu-bg animated flipInX">
-                            <ul class="main-menu-dropdown">
-                                <li><a href="#">Phản Hồi Khách Hàng</a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                       
                     </div>
                 </div>
             </div>
@@ -208,11 +191,10 @@
                                     { 
                                         $i++;
                                         $id=$row['id'];
-                                        $name=$row['ten_nguoi_lien_he'];
+                                        $name=$row['tenKH'];
                                         $email=$row['email'];
-                                      
-                                        $ghichu=$row['noi_dung'];
-                                       
+                                        $sdt=$row['sdt'];
+                                        $ghichu=$row['noidung'];
                                         $ngaydathang=$row['ngay_lien_he'];
                                  
                                         echo" <tr>";
@@ -220,7 +202,7 @@
                                      
                                         echo"<td>$name</td>";
                                         echo"<td>$email</td>";
-                                      
+                                        echo"<td>$sdt</td>";
                                         echo"</td>";
                                        
                                         echo"<td>$ghichu</div>";
@@ -248,22 +230,15 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-copy-right">
-                        <p>Copyright &#169; 2019 All rights reserved. facebook <a href="https://www.facebook.com/thien.rom.11a4">Tiên Tiên</a>.</p>
+                        <p>Copyright &#169; 2019 All rights reserved. facebook </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End-->
-    <!-- Chat Box Start-->
-    <div class="chat-list-wrap">
-        <div class="chat-list-adminpro">
-            <div class="chat-button">
-                <span data-toggle="collapse" data-target="#chat" class="chat-icon-link"><i class="fa fa-comments"></i></span>
-            </div>
-        </div>
-    </div>
-    <!-- Chat Box End-->
+   
+    
     <!-- jquery
         ============================================ -->
     <script src="js/vendor/jquery-1.11.3.min.js"></script>
