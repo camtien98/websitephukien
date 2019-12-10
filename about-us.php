@@ -1,46 +1,3 @@
-<<<<<<< HEAD
-<!---------------------------------------------------------------------------------------------->
- <?php include("subpage/banner.php"); ?> 
-<!---------------------------------------------------------------------------------------------->
-
-    <div class="container body-archive">
-        <div class="col-xs-12">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <i class="fa fa-home"></i>
-                        <a href="#">Trang chủ</a>
-                    </li>
-                    <li class="breadcrumb-item">Giới thiệu</li>
-                </ol>
-            </nav>
-        </div>
-        <div class="col-xs-12 box_contact" align="center">
-            <h1  >Sạc dự phòng Samsung </h1>
-            <p  >
-            <img id="zoom_01" src='img/1.png' data-zoom-image="img/1.png"/>
-           <p >Zoom Sản Phẩm</p>
-                
-              
-
-            </p>
-            <p > Sạc dự phòng Samsung 10.000mAh chất lượng cao
-               </p>
-        </div>
-    </div>
-<!------------------------------------------------------------------------------------------->
- <?php include("splienquan.php");?>
-
-
- <!------------------------------------------------------------------------------------------->
-<?php include("subpage/footer.php"); ?>
-   
-</body>
-
- <!------------------------------------------------------------------------------------------->
-<?php include("subpage/script.php"); ?> 
-
-=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,7 +35,7 @@
                     <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto ">
                             <li class="nav-item">
-                                <a class="nav-link" href="Trangchu.php">Trang Chủ
+                                <a class="nav-link" href="index.html">Trang Chủ
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
@@ -87,10 +44,10 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="SanPham.php">Sản Phẩm</a>
+                                <a class="nav-link" href="product.php">Sản Phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Lienhe.php">Liên Hệ</a>
+                                <a class="nav-link" href="contact.php">Liên Hệ</a>
                             </li>
                            <li class="nav-item">
                            <a class="nav-link"href="session.php"><i class="fa fa-cart-plus" aria-hidden="true" ></i>Giỏ Hàng</a>
@@ -116,7 +73,7 @@
     </header>
     <div class="banner">
         <div class="autoplay css_slider">
-            <img src="img/1.jpg" alt="">
+             <img src="img/1.jpg" alt="">
             <img src="img/2.jpg" alt="">
             <img src="img/b3.png" alt="">
             <img src="img/b4.png" alt="">
@@ -149,7 +106,7 @@
                </p>
         </div>
     </div>
- <?php include("splienquan.php");?>
+
      <div class="footer">
             <div class="container ft-top">
                 <div class="row">
@@ -234,5 +191,4 @@ document.write('<style type="text/css">body{background:#f5465a;padding-bottom:15
 <script type="text/javascript" src="https://itexpress.vn/js/noel.js"></script>
 
 
->>>>>>> c333148c23b785c2b2c4e782962a326041067d3b
 </html>
