@@ -1,0 +1,48 @@
+a
+{
+	text-decoration: none;
+}
+body{
+	background-image:url('hinh_anh/background.jpg');
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+
+
+
+}
+
+div.menu_ngang a 
+{
+	color:blue;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+	font-size:20px;
+}
+div.menu_ngang a:hover
+{
+	color:red
+}
+div.menu_doc a 
+{
+	color:blue;
+	text-decoration: none;
+	display:block;
+}
+div.menu_doc a:hover
+{
+	color:red
+}
+div.phan_trang a 
+{
+	font-size:36px;
+	margin-left:5px;
+	margin-right:5px;
+	text-decoration: none;
+	color:blue;
+}
+div.phan_trang a:hover 
+{
+	color:red
+}
