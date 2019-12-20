@@ -44,7 +44,6 @@ if (isset($_SESSION['error'])) {
     {
         echo "Error deleting record".mysqli_error($conn);
     }
-
  }
  else
  {

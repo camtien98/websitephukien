@@ -1,3 +1,4 @@
+
 <?php include("Session/chonhang.php")?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TTShop</title>
+    <title>Demo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="slick/slick.css">
@@ -26,7 +27,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="#">
                         <!-- <img src="img/logo.png" class="logo" alt=""> -->
-                        Phụ Kiện Điện Tử TTShop
+                        Mỹ Phẩm Thiên Vinh
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -64,9 +65,10 @@
     </header>
     <div class="banner">
         <div class="autoplay css_slider">
-            <img src="img/1.jpg" alt="">
-            <img src="img/2.jpg" alt="">
-
+            <img src="img/img1.jpg" alt="">
+            <img src="img/img2.jpg" alt="">
+            <img src="img/img3.jpg" alt="">
+            <img src="img/img4.jpg" alt="">
         </div>
     </div>
     <!--  -->
@@ -85,17 +87,17 @@
         <div class="row box_contact">
             <div class="col-md-6">
                 <h2 class="title_h2">Đơn Đặt Hàng </h2>
-                <h4 class="title_ct">Phụ Kiện Điện Tử TTShop</h4>
+                <h4 class="title_ct">Mỹ Phẩm Thiên Vinh</h4>
                 <p>
                     <i class="fa fa-map-marker"></i>180 Cao Lỗ, Phường 4, Quận 8, HCM</p>
                 <p>
-                    <i class="fa fa-phone-square"></i>0898.105.695</p>
+                    <i class="fa fa-phone-square"></i>035.6581.777</p>
                 <p>
-                    <i class="fa fa-envelope"></i>ntcamtien811@gmail.com</p>
+                    <i class="fa fa-envelope"></i>thien.phamminhstu@gmail.com</p>
                 <p>
-                    <i class="fa fa-facebook-square"></i> facebook:0898105695 </p>
+                    <i class="fa fa-facebook-square"></i> facebook.com/myphamthienvinh.Stu</p>
                 <p>
-                    <i class="fa fa-instagram"></i> zalo/Phụ Kiện Điện Tử TTShop/ 0898105695</p>
+                    <i class="fa fa-instagram"></i> zalo/myphamthienvinh</p>
 
             </div>
 
@@ -121,43 +123,43 @@
                 </form>
                 <?php
 
-    
-    $txthoten=$txtsodienthoai=$txtemail=$txtnoidung=NULL;
-    $loi=array();
-    $loi["name"]=$loi["phone"]=$loi["email"]=$loi["noidung"]=NULL;
-    if(isset($_POST["ok"]))
-    {  
-            if(empty($_POST["txtname"]))
-            {
-                $loi["name"]="*Vui lòng nhập Họ Và Tên.<br />";
-            }
-            else
-            {
-                $txthoten=trim($_POST['txtname']);
+	
+	$txthoten=$txtsodienthoai=$txtemail=$txtnoidung=NULL;
+	$loi=array();
+	$loi["name"]=$loi["phone"]=$loi["email"]=$loi["noidung"]=NULL;
+	if(isset($_POST["ok"]))
+	{  
+			if(empty($_POST["txtname"]))
+			{
+				$loi["name"]="*Vui lòng nhập Họ Và Tên.<br />";
+			}
+			else
+			{
+				$txthoten=trim($_POST['txtname']);
             }
             if(empty($_POST["txtnoidung"]))
-            {
-                $loi["noidung"]="*Vui lòng nhập Họ Và Tên.<br />";
-            }
-            else
-            {
-                $txtnoidung=nl2br($_POST['txtnoidung']);
-            }
-            if(empty($_POST["txtphone"]))
-            {
-                $loi["phone"]="*Vui lòng nhập Số Điện Thoại.";
-            }
-            else
-            {
-                    $txtsodienthoai=trim($_POST["txtphone"]);
+			{
+				$loi["noidung"]="*Vui lòng nhập Họ Và Tên.<br />";
+			}
+			else
+			{
+				$txtnoidung=nl2br($_POST['txtnoidung']);
+			}
+			if(empty($_POST["txtphone"]))
+			{
+				$loi["phone"]="*Vui lòng nhập Số Điện Thoại.";
+			}
+			else
+			{
+					$txtsodienthoai=trim($_POST["txtphone"]);
             }
             if(empty($_POST["txtemail"]))
-            {
-                $loi["email"]="*Vui lòng nhập Số Điện Thoại.";
-            }
-            else
-            {
-                    $txtemail=trim($_POST["txtemail"]);
+			{
+				$loi["email"]="*Vui lòng nhập Số Điện Thoại.";
+			}
+			else
+			{
+					$txtemail=trim($_POST["txtemail"]);
             }
           
             if($txthoten && $txtsodienthoai && $txtemail  )
@@ -175,11 +177,11 @@
                          echo $date;
                        $sql = "INSERT INTO lien_he (
                       id,
-                        ten_nguoi_lien_he,
-                            email,
-                                dien_thoai,
-                                    noi_dung,
-                                        ngay_lien_he
+                      	ten_nguoi_lien_he,
+                          	email,
+                              	dien_thoai,
+                                  	noi_dung,
+                                      	ngay_lien_he
                                                     )
                        VALUES 
                        ('',
@@ -202,7 +204,7 @@
                 
                 if (mysqli_query($conn, $sql)) {
                    
-                   
+			       
                     echo "Liên Hệ Admin Thành Công ";
              
                     
@@ -216,14 +218,14 @@
         
                
             }
-    }
+	}
     ?>
 
             </div>
         </div>
 
         <div class="col-sx-12 box_map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9551992264037!2d106.67572621530081!3d10.737936392347638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fad182844dd%3A0xe3099eb4c87f5610!2zMTgwIMSQxrDhu51uZyBDYW8gTOG7lywgUGjGsOG7nW5nIDQsIFF14bqtbiA4LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1540020353612"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9551992264037!2d106.67572621530081!3d10.737936392347638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fad182844dd%3A0xe3099eb4c87f5610!2zMTgwIMSQxrDhu51uZyBDYW8gTOG7lywgUGjGsOG7nW5nIDQsIFF14bqtbiA4LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1540020353612"
                 width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
@@ -233,67 +235,67 @@
             <div class="container ft-top">
                 <div class="row">
                     <div class="col-md-3">
-                        <h3 class="title_ft">Phụ Kiện Điện Tử TTShop</h3>
+                        <h3 class="title_ft">Mỹ Phẩm Thiên Vinh</h3>
                         <span class="border-span"></span>
                         <p>
-                            Phụ Kiện Điện Tử TTShop với nhiều mặt hàng chính hãng, mẫu mã đa dạng, đẹp, chất lượng cao bảo hành 1 năm 1 đổi 1 với nhiều khuyến mãi và giao hàng tận nơi trong 60 phút ở khu vực TPHCM
+                            Mỹ Phẩm Thiên Vinh do chính VinhCice và Thienga sáng lập ,
+                            với sự ấp ủ kế hoạch rất nhiều năm sử dụng và kiểm nghiệm
+                             cùng nhiều chuyên gia nước ngoài đến nay Mỹ Phẩm Thiên Vinh
+                             đã chính thức đưa ra  dòng sản phẩm mỹ phẩm cao cấp được nhiều người dùng tin dùng .
                         </p>
                     </div>
                     <div class="col-md-3">
-                       <h3 class="title_ft">Sản phẩm</h3>
-                            <span class="border-span"></span>
-                            <p>
-                                <a href="/">Sạc dự phòng</a>
-                            </p>
-                            <p>
-                                <a href="">Loa</a>
-                            </p>
-                            <p>
-                                <a href="">Tai nghe</a>
-                            </p>
-                            <p>...</p>
-                        </div>
-                        <div class="col-md-3">
-                            <h3 class="title_ft">Liên hệ</h3>
-                            <span class="border-span"></span>
-                            <p>
-                                <i class="fa fa-map-marker"></i> 180 Cao Lỗ ,Phường 4 , Quận 8</p>
-                            <p>
-                                <i class="fa fa-phone-square"></i> 0898.105.695</p>
-                            <p>
-                                <i class="fa fa-envelope"></i> ntcamtien811@gmail.com</p>
-                            <p>
-                                <i class="fa fa-envelope"></i>
-                                <i class="fa fa-envelope"></i>
-                                <i class="fa fa-envelope"></i>
-                                <i class="fa fa-envelope"></i>
-                            </p>
-                        </div>
-                        <div class="col-md-3">
-                            <h3 class="title_ft">FanPage</h3>
-                            <span class="border-span"></span>
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTTShop-495128960896483%2F&tabs=timeline&width=400&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <h3 class="title_ft">Sản phẩm</h3>
+                        <span class="border-span"></span>
+                        <p>
+                            <a href="/">Nước Hoa</a>
+                        </p>
+                        <p>
+                            <a href="">Son</a>
+                        </p>
+                        <p>
+                            <a href="">Kem</a>
+                        </p>
+                        <p>...</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="title_ft">Liên hệ</h3>
+                        <span class="border-span"></span>
+                        <p>
+                            <i class="fa fa-map-marker"></i> 180 Cao Lỗ ,Phường 4 , Quận 8</p>
+                        <p>
+                            <i class="fa fa-phone-square"></i> 03565.6581.777</p>
+                        <p>
+                            <i class="fa fa-envelope"></i> thien.phamminhstu@gmail.com</p>
+                        <p>
+                            <i class="fa fa-envelope"></i>
+                            <i class="fa fa-envelope"></i>
+                            <i class="fa fa-envelope"></i>
+                            <i class="fa fa-envelope"></i>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="title_ft">FanPage</h3>
+                        <span class="border-span"></span>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FM%E1%BB%B9-Ph%E1%BA%A9m-Thi%C3%AAn-Vinh-340207426736206%2F%3Fmodal%3Dadmin_todo_tour&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
-                <div class="ft_bottom">
-                    <div class="container">
-                        <div class="col-xs-12">
-                            Copyright © 2019. All Rights Reserved
-                        </div>
+            </div>
+            <div class="ft_bottom">
+                <div class="container">
+                    <div class="col-xs-12">
+                        Copyright © 2018 THIEN GA. All Rights Reserved
                     </div>
                 </div>
             </div>
         </div>
-        <a id="scroll-top" class='scroll-top' title="Back to top" href="#">
-            <i class="fa fa-arrow-up"></i>
-        </a>
-    </body>
-<script defer > window.onload = function(){ setTimeout(function(){var chatJsElement = document.createElement("script"); chatJsElement.src = "https://app.ohchat.net/clients/43772/code.php"; chatJsElement.setAttribute("defer", "defer"); document.getElementsByTagName("body")[0].appendChild(chatJsElement);}, 300) }; </script>    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="script.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <script type="text/javascript" src="http://demo.iwebs.vn/api/js/noel.js"></script> -->
-    <!-- <script type="text/javascript" src="js/noel.js"></script> -->
-
-
-    </html>
+    </div>
+    <a id="scroll-top" class='scroll-top' title="Back to top" href="#">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

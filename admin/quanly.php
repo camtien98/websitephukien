@@ -106,29 +106,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="nav nav-tabs custom-menu-wrap">
-                        <li><a data-toggle="tab" href="#Home">Trang Chủ</a>
+                        <li><a data-toggle="tab" href="#Home">Đơn hàng</a>
                         </li>
-                        <li><a data-toggle="tab" href="#mailbox">Hòm Thư</a>
-                        </li>
-                      
+                        <li><a class="nav-link" href="gopykhachhang.php">Hộp Thư</a></li>                  
                     </ul>
-                    <div class="tab-content custom-menu-content">
-                        <div id="Home" class="tab-pane tab-custon-menu-bg animated flipInX">
-                            <ul class="main-menu-dropdown">
-                                <li><a href="../index.html">Quay Trở Lại</a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                        <div id="mailbox" class="tab-pane tab-custon-menu-bg animated flipInX">
-                            <ul class="main-menu-dropdown">
-                                <li><a href="gopykhachhang.php">Phản hồi Khách Hàng</a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                       
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -264,7 +246,7 @@
     </div>
     <!-- Footer End-->
     <!-- Chat Box Start-->
-    <script src="https://uhchat.net/code.php?f=91925c"></script>
+   
     <!-- Chat Box End-->
     <!-- jquery
 		============================================ -->

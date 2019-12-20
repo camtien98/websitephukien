@@ -58,14 +58,7 @@ echo "hello";
                 $tong_lon=$tong_lon+$tong;
                 if($sl_sp!=0)
                 $tong_lon_duoc_dinh_dang=number_format($tong_lon,0,",",".");
-							echo "<b>".$tong_lon_duoc_dinh_dang."</b>";
-                {
-                ?>
-                
-                    
-                  
-                    <?php
-                }								
+							echo "<b>".$tong_lon_duoc_dinh_dang."</b>";								
         }
     }
 }
