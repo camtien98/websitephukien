@@ -39,7 +39,7 @@
     <!-- normalize CSS
 		============================================ -->
     <link rel="stylesheet" href="css/normalize.css">
-    <?php echo "hello"; ?>
+    
     <!-- charts CSS
 		============================================ -->
     <link rel="stylesheet" href="css/c3.min.css">
